@@ -361,6 +361,9 @@ export default {
                 this.form.skuData = dataTemp
             }
         },
+        deleteCard(index) {
+            this.myAttribute = this.myAttribute.splice(index)
+        },
         // 新增一个规格
         onAddAttribute(index) {
             this.myAttribute[index].addAttribute = this.myAttribute[index].addAttribute.trim()
